@@ -3,12 +3,21 @@
 
 #include <iostream>
 #include "Item.h"
+#include "Cart.h"
 #include "FoodItem.h"
 int main()
 {
 	FoodItem apple("02-02-2002", "Apple", 2.5, 0000001);
 	FoodItem banana("02-02-2002", "Banana", 1.5, 0000002);
 	Item usb("USB", 55, 0000003);
+
+    std::auto_ptr<Cart> myCart(new Cart());
+    Cart->addItem(apple, 3);
+    Cart->addItem(banana, 6);
+    Cart->addItem(usb, 3);
+
+    float sum = Cart->calculateTotal();
+    std::cout  << sum;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

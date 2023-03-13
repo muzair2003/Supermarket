@@ -11,6 +11,7 @@ public:
 	//FoodItem(string expiry, string name, float price, int barcode, int limit);
 	//FoodItem(string expiry, string name, float price, int barcode);
 	~FoodItem();
+
 private:
 	string m_expiry;
 };
