@@ -1,13 +1,23 @@
 #include "Item.h"
 #include <iostream>
 using namespace std;
+Item::Item():
+	m_price(0),
+	m_name(""),
+	m_barcode(0),
+	m_discounted_price(0),
+	m_weight(0),
+	m_limit(0)
+{
 
+}
 Item::Item(string name, float price, int barcode, int limit, float discounted_price, float weight) :
 	m_price(price),
 	m_name(name),
 	m_barcode(barcode),
 	m_discounted_price(discounted_price),
-	m_weight(weight)
+	m_weight(weight),
+	m_limit(limit)
 {
 	cout << "I am constructor Item #1" << endl;
 }

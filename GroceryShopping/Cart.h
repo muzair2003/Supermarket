@@ -7,7 +7,7 @@ class Cart
 public:
 	Cart();
 	~Cart();
-	Item addItem(Item newItem, int quantity);
+	void addItem(Item newItem, int quantity);
 	float calculateTotal();
 private:
 	int m_quantity;
